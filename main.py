@@ -1,15 +1,18 @@
 #auto-py-to-exe
-import time
+from kivy.app import App
+from kivy.lang import Builder
 import keyboard as keyb
+import time
 
-n=1
-while n<10:
-    keyb.write('...')
-    time.sleep(2)
+time.sleep(5)
+class ServiceApp(App):
+    n=1
+    while n<<10:
+        n+=1
+        keyb.write('...')
+        time.sleep(1)
 
 
 
-
-
-
-
+if __name__ == '__main__':
+    ServiceApp().run()
